@@ -9,6 +9,7 @@ import (
 
 func OnPeer(p p2p.Peer) error {
 	fmt.Printf("Doing something with Peer outside of TCPTransport")
+	p.Close()
 	return nil
 }
 
